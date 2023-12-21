@@ -18,7 +18,7 @@ $(document).ready(function() {
         if (etniaSeleccionada !== "Presentacion")
         {window.location.href = `/html/vistaComunidad.html?etnia=${etniaSeleccionada}`;}
         else
-        {window.location.href = `/html/vistaHomeComunidades.html`;}
+        {window.location.href = `index.html`;}
     });   
 
         // Manejador para el botón de la comunidad indígena

@@ -1,23 +1,24 @@
-let cuenta = 0;
-const valorParada = 50; 
+const valoresParada = [50, 75, 100, 125]; // Valores de finalización para cada contador
 
-let intervalo = setInterval(incrementar, 50);
+function incrementar(contadorId, valorParada) {
+    let contador = document.getElementById(contadorId).querySelector('.numero');
+    let cuenta = parseInt(contador.innerText);
 
-function incrementar() {
     if (cuenta < valorParada) {
         cuenta++;
-        document.getElementById('contador').innerText = cuenta;
-        animarContador();
-    } else {
-        clearInterval(intervalo); // Detiene el incremento cuando se alcanza el valor de parada
+        contador.innerText = cuenta;
+        animarContador(contador);
     }
 }
 
-function animarContador() {
-    let contador = document.getElementById('contador');
-    contador.style.transform = 'scale(1.5)';
+function animarContador(contador) {
+    contador.style.transform = 'scale(1)';
     setTimeout(() => {
         contador.style.transform = 'scale(1)';
     }, 500);
 }
 
+// Iniciar contadores
+valoresParada.forEach((valor, index) => {
+    setInterval(() => incrementar(`contador${index + 1}`, valor), 100);
+});

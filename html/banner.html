@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .header {
-            padding: 5px 10px; /* Reduce el padding superior e inferior */
-        }
-        .logo {
-            height: 80px; /* Ajusta esto según tus necesidades */
-            width: auto; /* Mantiene la proporción de la imagen */
-        }
-        
+      .header {
+        padding: 5px 10px; /* Reduce el padding superior e inferior */
+        position: fixed;
+        top: 0; /* Alinea el header con el borde superior de la página */
+        left: 0; /* Alinea el header con el borde izquierdo de la página */
+        width: 100%; /* Asegura que el header se extienda a lo ancho de la página */
+        background: #fff; /* Establece un fondo blanco, o el color de tu preferencia */
+        z-index: 1000; /* Asegura que el header se mantenga sobre los demás elementos */
+      }
+      .logo {
+        height: 80px; /* Ajusta esto según tus necesidades */
+        width: auto; /* Mantiene la proporción de la imagen */
+      }
+      body {
+        padding-top: 90px; /* Añade un padding al body para evitar que el contenido se oculte debajo del header */
+    }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <img src="../public/images/logo1.png" alt="Logo" class="logo"/>
+      <img src="../public/images/logo1.png" alt="Logo" class="logo" />
     </div>
-</body>
+  </body>
 </html>

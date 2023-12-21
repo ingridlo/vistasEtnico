@@ -23,12 +23,12 @@ $(document).ready(function() {
 
         // Manejador para el botón de la comunidad indígena
         $('.indigenous-button').on('click', function() {
-            window.location.href = 'vistaComunidad.html?etnia=Indigenas';
+            window.location.href = '/html/vistaComunidad.html?etnia=Indigenas';
         });
     
         // Manejador para el botón de la comunidad afrocolombiana
         $('.afro-button').on('click', function() {
-            window.location.href = 'vistaComunidad.html?etnia=Afrocolombianos';
+            window.location.href = '/html/vistaComunidad.html?etnia=Afrocolombianos';
         });
     
     const urlParams = new URLSearchParams(window.location.search);

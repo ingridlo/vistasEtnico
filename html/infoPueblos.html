@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Información del Pueblo</title>
+</head>
+<body>
+  <div id="infoPueblo">
+    <h2 id="nombrePueblo">Nombre del Pueblo</h2>
+    <p id="informacionPueblo">Información del pueblo.</p>
+    <img id="imagenPueblo" src="" alt="Imagen del Pueblo" style="max-width:100%;">
+  </div>
+
+   <script>
+    const params = new URLSearchParams(window.location.search);
+    const nombrePueblo = params.get('nombre');
+
+    // Función para cargar la información del pueblo
+    function cargarInformacionPueblo(nombre) {
+      fetch('../comunidades.json')
+        .then(response => response.json())
+        .then(pueblos => {
+          const puebloEncontrado = pueblos.find(p => p.nombre === nombre);
+          if (puebloEncontrado) {
+            document.getElementById('nombrePueblo').textContent = puebloEncontrado.nombre;
+            document.getElementById('informacionPueblo').textContent = puebloEncontrado.informacion;
+            document.getElementById('imagenPueblo').src = puebloEncontrado.imagen1;
+          } else {
+            document.getElementById('nombrePueblo').textContent = 'Pueblo no encontrado';
+            document.getElementById('informacionPueblo').textContent = '';
+            document.getElementById('imagenPueblo').src = '';
+          }
+        })
+        .catch(error => console.error('Error:', error));
+    }    
+    cargarInformacionPueblo(nombrePueblo);
+  </script>
+</body>
+</html>

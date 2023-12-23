@@ -14,11 +14,17 @@ $(document).ready(function() {
   
     $('#menu-lateral a').on('click', function(e) {
         e.preventDefault();
+        
         const etniaSeleccionada = $(this).data('key');
-        if (etniaSeleccionada !== "Presentacion")
-        {window.location.href = `/html/vistaComunidad.html?etnia=${etniaSeleccionada}`;}
+        console.log(etniaSeleccionada)
+        if (etniaSeleccionada === "Presentacion")
+        {window.location.href = `../index.html`;}        
+        else if (etniaSeleccionada === "Geografico") {
+            {window.location.href = `/html/portalGeografico.html`;} 
+        }
         else
-        {window.location.href = `../index.html`;}
+        {window.location.href = `/html/vistaComunidad.html?etnia=${etniaSeleccionada}`;}
+        
     });   
 
         // Manejador para el botón de la comunidad indígena

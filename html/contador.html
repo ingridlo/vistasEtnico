@@ -1,63 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contadores Múltiples</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contadores con Iconos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>     
-            .contador {
-                padding: 10px;
-                margin: 2px;
-                text-align: center;
-            }
-            .numero {
-                font-size: 2em;
-                width: 100px; /* Ancho fijo */
-                height: 100px; /* Alto fijo */               
-                background-color: rgb(248, 248, 248);
-                display: inline-block;
-                padding: 20px;
-                border-radius: 10px; /* Opcional para bordes redondeados */
-                box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
-                align-items: center;
-                color:rgb(204, 50, 181);
-                font-family: 'Montserrat', sans-serif;
-            }
-            .titulo {
-                font-size: 1em;                
-                margin-top: 15px;
-                font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
-                color: #61A5E4; /* Establece el color de la fuente */
-                font-weight: 700;
-            }
-        </style>
-        
-    
+    <style> 
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Poppins", sans-serif;
+        }
+      
+        .contador {           
+            text-align: center;
+        }
+        .numero {
+            font-size: 2em;
+            display: block; /* Cambiado de inline-block a block para que tome su propia línea */
+            margin: auto; /* Centrado horizontalmente */
+            width: 100px; /* Ancho fijo */
+            height: 100px; /* Alto fijo */
+            background-color: rgb(248, 248, 248);
+            border-radius: 10px; /* Opcional para bordes redondeados */
+            box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+            align-items: center;
+            line-height: 100px; 
+            color: rgb(204, 50, 181);          
+        }
+        .titulo {
+            font-size: 1em;
+            margin-top: 15px;            
+            color: #61A5E4; /* Establece el color de la fuente */
+            font-weight: 700;
+        }
+        .icon-container img {
+            width: 80px; /* Ajusta el tamaño de tus iconos */
+            height: auto;
+            margin-bottom: 15px; /* Espacio entre el icono y el contador */
+        }
+    </style>
 </head>
 <body>
     <div class="container text-center">
-        <h3 class="text-center">Estadisticas comunidades</h3>
+        <h3 class="text-center">Estadísticas comunidades</h3>
         <br>
         <div class="row">
-            <div class="col-md-2 contador" id="contador1">               
+            <div class="col-md-3 contador" id="contador1">
+                <div class="icon-container">
+                    <img src="../iconos/nativo-americano (1).gif" alt="Icono Consejos" />
+                </div>
                 <div class="numero">0</div>
-                <div class="titulo">Nº Resguardos</div>
+                <div class="titulo">No. Consejos</div>
             </div>
             <div class="col-md-3 contador" id="contador2">
+                <div class="icon-container">
+                    <img src="../iconos/mapas.gif" alt="Icono Familias" />
+                </div>
                 <div class="numero">0</div>
-                <div class="titulo">Nº Pueblos</div>
+                <div class="titulo">No. Familias</div>
             </div>
             <div class="col-md-3 contador" id="contador3">
+                <div class="icon-container">
+                    <img src="../iconos/cabina.gif" alt="Icono Habitaciones ocupadas" />
+                </div>
                 <div class="numero">0</div>
-                <div class="titulo">Nº Habitantes</div>
+                <div class="titulo">No. ha ocupadas</div>
             </div>
             <div class="col-md-3 contador" id="contador4">
+                <div class="icon-container">
+                    <img src="../iconos/nativo-americano.gif" alt="Icono Municipios habitados" />
+                </div>
                 <div class="numero">0</div>
-                <div class="titulo">Nº Comunidades</div>
+                <div class="titulo">No. municipios habitados</div>
             </div>
         </div>
     </div>
 
     <script src="/scripts/contador.js"></script>
+
 </body>
 </html>

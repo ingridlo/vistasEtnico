@@ -2,31 +2,31 @@
   {
     "nombre": "Embera Eyabida",
     "informacion": "El pueblo Embera Eyabida se localiza en las territoriales Panzen\u00fa, Taham\u00edes y Zanufan\u00e1, en resguardos y parcialidades o comunidades ind\u00edgenas, poseen lengua propia y se encuentran organizadas en cabildos ind\u00edgenas locales y la Asociacion de Cabildos Ind\u00edgenas de Antioquia (OIA).",
-    "imagen1": "",
+    "imagen1": "../images/pueblos/Embera_Eyabida.jpg",
     "multimedia": "https://www.youtube.com/watch?v=IPoG8TlDpgs"
   },
   {
-    "nombre del pueblo": "Embera Chamed",
-    "informacion ": "El pueblo Embera Cham\u00ed se localiza en las territoriales Cartama, Citar\u00e1, Panzen\u00fa, Taham\u00edes y Zanufan\u00e1, en resguardos y parcialidades o comunidades ind\u00edgenas, poseen lengua propia y se encuentran organizadas en cabildos ind\u00edgenas locales y la Asociacion de Cabildos Ind\u00edgenas de Antioquia (OIA):",
-    "imagen1": "",
+    "nombre": "Embera Chamí",
+    "informacion": "El pueblo Embera Cham\u00ed se localiza en las territoriales Cartama, Citar\u00e1, Panzen\u00fa, Taham\u00edes y Zanufan\u00e1, en resguardos y parcialidades o comunidades ind\u00edgenas, poseen lengua propia y se encuentran organizadas en cabildos ind\u00edgenas locales y la Asociacion de Cabildos Ind\u00edgenas de Antioquia (OIA):",
+    "imagen1": "../images/pueblos/Embera_Chami.jpg",
     "multimedia": "https://youtu.be/gtA49DF2vss"
   },
   {
-    "nombre del pueblo": "Senú",
-    "informacion ": "El pueblo Sen\u00fa se localiza en la Territorial Panzen\u00fa, zona Bajo Cauca en resguardos y parcialidades o comunidades ind\u00edgenas organizadas en cabildos ind\u00edgenas locales, Cabildos Mayores, la Asociacion de Cabildos Ind\u00edgenas de Antioquia (OIA) y otras formas organizativas como el Comit\u00e9 Operativo de Autoridades (COA).",
-    "imagen1": "",
+    "nombre": "Senú",
+    "informacion": "El pueblo Sen\u00fa se localiza en la Territorial Panzen\u00fa, zona Bajo Cauca en resguardos y parcialidades o comunidades ind\u00edgenas organizadas en cabildos ind\u00edgenas locales, Cabildos Mayores, la Asociacion de Cabildos Ind\u00edgenas de Antioquia (OIA) y otras formas organizativas como el Comit\u00e9 Operativo de Autoridades (COA).",
+    "imagen1": "../images/pueblos/Senu.jpg",
     "multimedia": "https://youtu.be/EvnfZkf-tQA"
   },
   {
-    "nombre del pueblo": "Nutabe",
-    "informacion ": "El pueblo Nutabe se localiza en la Territorial Taham\u00edes, municipio de Ituango y en la Territorial Hev\u00e9xicos municipio de Sabanalarga.",
-    "imagen1": "",
+    "nombre": "Nutabe",
+    "informacion": "El pueblo Nutabe se localiza en la Territorial Taham\u00edes, municipio de Ituango y en la Territorial Hev\u00e9xicos municipio de Sabanalarga.",
+    "imagen1": "../images/pueblos/Nutabe.jpg",
     "multimedia": null
   },
   {
-    "nombre del pueblo": "Embera Dobida",
-    "informacion ": "Este pueblo ind\u00edgena se encuentra localizado principalmente en la zona del Urab\u00e1 antioque\u00f1o y Choco, sin embargo se ha identificado la presencia de una parcialidad ind\u00edgena en el municipio de Zaragoza, que hace parte de la Territorial Taham\u00edes:",
-    "imagen1": "",
+    "nombre": "Embera Dobida",
+    "informacion": "Este pueblo ind\u00edgena se encuentra localizado principalmente en la zona del Urab\u00e1 antioque\u00f1o y Choco, sin embargo se ha identificado la presencia de una parcialidad ind\u00edgena en el municipio de Zaragoza, que hace parte de la Territorial Taham\u00edes:",
+    "imagen1": "../images/pueblos/Senu.jpg",
     "multimedia": null
   }
 ]
